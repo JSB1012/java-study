@@ -6,7 +6,6 @@ public class GoodsApp2 {
 
 	public static void main(String[] args) {
 		Goods2 goods2 = new Goods2();	//객체 생성
-		
 		// public은 모든 접근이 가능하다.
 		goods2.name = "camera";
 		
@@ -22,5 +21,5 @@ public class GoodsApp2 {
 		
 
 	}
-
+	
 }
