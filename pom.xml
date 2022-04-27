@@ -6,8 +6,10 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>chapter03</module>
+		<module>practice01</module>
+		<module>practice02</module>
+		<module>practice03</module>
 	</modules>
-	
 
 
 	<properties>
@@ -16,6 +18,7 @@
 		<maven.complier.source>11</maven.complier.source>
 		<maven.complier.target>11</maven.complier.target>
 	</properties>
+
 	<build>
 		<finalName>chapter03</finalName>
 	</build>
