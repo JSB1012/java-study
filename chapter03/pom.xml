@@ -6,5 +6,20 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>chapter03</artifactId>
-  <packaging>pom</packaging>
+  
+  
+  
+  
+  
+  	<properties>
+		<project.build.sourceEncodig>UTF-8</project.build.sourceEncodig>
+		<project.build.outputEncoding>UTF-8</project.build.outputEncoding>
+		<maven.complier.source>11</maven.complier.source>
+		<maven.complier.target>11</maven.complier.target>
+	</properties>
+
+	<build>
+		<finalName>chapter03</finalName>
+	</build>
+	
 </project>
