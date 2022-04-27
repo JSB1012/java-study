@@ -20,6 +20,10 @@ public class Goods {
 	}
 
 	public void setPrice(int price) {
+		// 데이터 보호
+		if(price < 0) {
+			price = 0;
+		}
 		this.price = price;
 	}
 
