@@ -71,6 +71,5 @@ public class PhoneList01 {
 				e.printStackTrace();
 			}
 		}
-	
 	}
 }
