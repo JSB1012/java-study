@@ -87,9 +87,10 @@ public class ChatServerThread extends Thread {
 		printWriter.println(data);
 		//printWriter.flush();
 
-		/*
-		 * printWriter.println("join:ok"); printWriter.flush();
-		 */
+		
+		printWriter.println("join:ok");
+		printWriter.flush();
+		 
 		
 		printWriter.println(" 매너를 지켜 주세요.");
 		//printWriter.flush();
