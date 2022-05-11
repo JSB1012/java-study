@@ -25,7 +25,13 @@ public class ChatClientThread extends Thread {
 
 			while (true) {
 				String message = bufferedReader.readLine();
-				System.out.println(message);
+
+				if (message == null) {
+					ChatClient.log("입력하셔야합니다.");
+					break;
+				} else {
+					System.out.println(message);
+				}
 			}
 		} catch (IOException e) {
 			System.out.println("error:" + e);

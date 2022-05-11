@@ -43,8 +43,6 @@ public class ChatServerThread extends Thread {
 
 				if (line == null) {
 					ChatServer.log("클라이언트로부터 연결 끊김");
-
-					doQuit(printWriter);
 					break;
 				}
 
@@ -85,21 +83,22 @@ public class ChatServerThread extends Thread {
 		addWriter(writer);
 
 		printWriter.println(data);
-		//printWriter.flush();
 
-		
+		// printWriter.flush();
+
+//		printWriter.println("join:ok");
+//		printWriter.flush();
+
 		printWriter.println("join:ok");
-		printWriter.flush();
-		 
-		
-		printWriter.println(" 매너를 지켜 주세요.");
-		//printWriter.flush();
+		printWriter.println("매너 필수!");
+
+		// printWriter.flush();
 	}
 
 	private void doQuit(Writer writer) {
 		removeWriter(writer);
 
-		String data = nickname + "님이 퇴장하였습니다.";
+		String data = nickname + "님이 퇴장하셨습니다.";
 		broadcast(data);
 	}
 
@@ -113,7 +112,7 @@ public class ChatServerThread extends Thread {
 			for (Writer writer : listWriters) {
 				PrintWriter printWriter = (PrintWriter) writer;
 				printWriter.println(data);
-				//printWriter.flush();
+				// printWriter.flush();
 			}
 
 		}
